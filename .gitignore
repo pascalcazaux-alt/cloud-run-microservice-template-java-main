@@ -70,7 +70,7 @@ hs_err_pid*
 
 ### Eclipse ###
 # https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
-
+.idea
 .metadata
 bin/
 tmp/
