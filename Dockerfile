@@ -17,7 +17,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Exposer le port par défaut pour Cloud Run
-EXPOSE 8080
+EXPOSE 8090
 
 # Lancer l'application
 ENTRYPOINT ["java", "-jar", "app.jar"]
