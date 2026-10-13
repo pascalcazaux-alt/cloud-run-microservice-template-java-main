@@ -7,7 +7,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Compiler et packager l'application (en ignorant les tests pour aller plus vite)
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 # --- Étape 2 : Exécution de l'application ---
 FROM eclipse-temurin:25-jre-alpine
