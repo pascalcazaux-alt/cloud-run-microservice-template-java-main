@@ -17,6 +17,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Exposer le port par défaut pour Cloud Run
+ENV PORT=8080
 EXPOSE 8080
 
 # Lancer l'application
