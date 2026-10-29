@@ -35,7 +35,7 @@ public class MicroserviceController {
     String Data2 = parameter.getData2();
 
     Response response = new Response();
-    response.message = "Data1 vaut " + Data1 + " et Data2 vaut" + Data2;
+    response.message = "Data1 vaut " + Data1 + " et Data2 vaut " + Data2;
 
     return ResponseEntity
             .status(HttpStatus.OK)
